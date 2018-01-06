@@ -1,20 +1,6 @@
 <ul class="site-menu">
     <h2>Automatic Menu</h2>
         
-    {% assign base_url = page.url %}
-    
-    {% for node in site.pages %}
-        <li><a  class="{% if node.url == page.url %} active{% endif %}"  href='{{ node.url | prepend: site.baseurl }}'>{{node.title}}</a></li>
-      {% if node.title %}
-        {% assign node_url_parts = node.url | split: '/' %}
-        {% assign node_url_parts_size = node_url_parts | size %}
-        
-        {% if node_url_parts[1] == url_parts[1] %}
-        
-            <li><a  class="{% if node.url == page.url %} active{% endif %}"  href='{{ node.url | prepend: site.baseurl }}'>{{node.title}}</a></li>
-        {% endif %}
-
-      {% endif %}
-    {% endfor %}
+   
 
 </ul>
