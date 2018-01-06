@@ -1,9 +1,9 @@
 <ul class="site-menu">
         
   {% for node in site.pages %}
-
+    {% if node.title %}
         <li>A page : <a href="{{ node.url | prepend: site.baseurl }}">{{node.title}}</a></li>
-      
+    {% endif %}
   {% endfor %}
 
 </ul>
