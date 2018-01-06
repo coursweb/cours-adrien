@@ -1,0 +1,8 @@
+header h1 {
+  text-transform: uppercase;
+}
+
+.site-menu li {
+  float: none;
+  width: 100%;
+}

@@ -2,6 +2,6 @@
 layout: page
 ---
 
-# chapitre 1
+# Chapitre 1
 
 Test
