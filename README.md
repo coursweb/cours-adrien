@@ -1,7 +1,3 @@
----
-layout: page
----
-
 # Cours Adrien
 
 Support de cours programmation web
