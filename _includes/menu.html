@@ -1,6 +1,10 @@
 <ul class="site-menu">
-    <h2>Automatic Menu</h2>
+  <h2>Automatic Menu</h2>
         
-   
+  {% for node in site.pages %}
+
+        <li>A page : <a href="{{ node.url | prepend: site.baseurl }}">{{node.title}}</a></li>
+      
+  {% endfor %}
 
 </ul>
