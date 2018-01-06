@@ -2,7 +2,9 @@
 
 {% for node in site.pages %}
   {% if node.title %}
-    <li><a href="{{ node.url | prepend: site.baseurl }}" class="{% if node.url == page.url %} active{% endif %}">{{node.title}}</a> URL: {{ node.url }}</li>
+    {% if node.url != '/' %}
+      <li><a href="{{ node.url | prepend: site.baseurl }}" class="{% if node.url == page.url %} active{% endif %}">{{node.title}}</a> URL: {{ node.url }}</li>
+      {% endif %}
   {% endif %}
 {% endfor %}
 
